@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "mode": "persuade",
+  "world": "Board paper and control register",
+  "artifact": "boardpaper",
+  "tokens": {
+    "color": {
+      "bg": "#f2edde",
+      "ink": "#242a2d",
+      "muted": "#60645e",
+      "line": "#bcb8aa",
+      "panel": "#e4ddcb",
+      "accent": "#a96824",
+      "inverse": "#293035",
+      "inverseInk": "#faf7ed"
+    },
+    "typography": {
+      "display": "Noto Serif Thai",
+      "body": "Noto Sans Thai",
+      "utility": "system monospace"
+    },
+    "spacing": {
+      "page": "clamp(18px, 5vw, 76px)",
+      "section": "clamp(67px, 10vw, 144px)"
+    },
+    "shape": {
+      "radius": "world-specific",
+      "elevation": "one deliberate surface system"
+    }
+  }
+}
