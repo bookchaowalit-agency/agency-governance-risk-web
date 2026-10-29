@@ -3,6 +3,8 @@ import localFont from 'next/font/local';
 import type { ReactNode } from 'react';
 import { site } from '@/lib/site';
 import { canonicalUrl, siteConfig } from '@/lib/site-config';
+import './design-floor/tokens.css';
+import './app-theme.css';
 import './globals.css';
 
 const notoSansThai = localFont({

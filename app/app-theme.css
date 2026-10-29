@@ -1,0 +1,22 @@
+/*
+ * Governance & Risk visual world (folio paper / rule line / amber mark),
+ * expressed in the design-floor token names. Loaded after
+ * design-floor/tokens.css, which stays an unchanged copy (ADR-0007).
+ */
+
+:root {
+  --color-bg: #f2edde;
+  --color-surface: #e4ddcb;
+  --color-fg: #242a2d;
+  --color-fg-muted: #5b5f59; /* was #60645e: 4.45:1 on the panel, now 4.81:1 */
+  --color-accent: #a96824;
+  --color-accent-fg: #faf7ed;
+  --color-border: #bcb8aa;
+  --color-focus: #a96824;
+
+  /* next/font/local exposes the renamed Noto faces as these variables. */
+  --font-sans: var(--font-sans-thai), Arial, sans-serif;
+  --font-serif: var(--font-serif-thai), Georgia, "Times New Roman", serif;
+  /* Mono labels contain Thai: send Thai glyphs to Noto Sans Thai, not the OS. */
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", "DejaVu Sans Mono", var(--font-sans-thai), monospace;
+}
