@@ -2,7 +2,7 @@
   "floor": "1.0.0",
   "public": true,
   "target": { "static": "out" },
-  "routes": ["/", "/services/", "/services/ai-governance-readiness-review/", "/404/"],
+  "routes": ["/", "/services/", "/services/ai-governance-readiness-review/", { "path": "/no-such-page/", "status": 404 }],
   "widths": [320, 375, 390, 768, 1440],
   "waivers": []
 }
