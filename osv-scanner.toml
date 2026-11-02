@@ -7,3 +7,17 @@ reason = """braces <=3.0.3 stack exhaustion on deeply nested brace patterns. No 
 (3.0.3 is the latest). Dev-only: eslint-config-next -> @next/eslint-plugin-next -> fast-glob -> \
 micromatch -> braces, run at lint time on glob patterns from this repository's own config, never on \
 request input, and not part of the Next.js runtime bundle. Re-check when braces or fast-glob ships a fix."""
+
+# Build-time: @sentry/nextjs -> @sentry/bundler-plugins -> glob 13 finds source maps in our own
+# build output during `next build`. It never passes an AbortSignal, so the bypass has no effect.
+[[IgnoredVulns]]
+id = "GHSA-3g3m-2fjr-6pw4"
+ignoreUntil = 2027-02-01
+reason = "glob 13 abort-signal bypass; build-time only via the Sentry bundler plugin, which never aborts a walk. Fixed only in glob 14, outside the plugin's range. Added 2026-11-03."
+
+# Dev/build-time: minimatch (Sentry bundler plugin, typescript-estree, ESLint) matches patterns
+# written in this repository or the plugin, never user input.
+[[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249"
+ignoreUntil = 2027-02-01
+reason = "minimatch pattern amplification DoS; reached only with repo- or tool-authored glob patterns at lint/build time. Fixed only in minimatch 11, outside every consumer's range. Added 2026-11-03."
