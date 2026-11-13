@@ -6,3 +6,7 @@ out
 .env*
 coverage
 *.tsbuildinfo
+
+# Storybook
+storybook-static/
+*storybook.log
