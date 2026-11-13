@@ -42,3 +42,21 @@ Vendored `app/design-floor/tokens.css` (header `css-vars` 1.0.0, แก้ไม
 Dark mode: ไม่มี (visual world นี้มีธีมเดียว) Waivers: ไม่มี
 
 Display heading เลิกใช้ tracking ติดลบกับข้อความไทยแล้ว และลดขนาดลงราว 7% เพื่อให้ความยาวบรรทัดใกล้ของเดิม
+
+
+---
+
+## Storybook
+
+Storybook 10 (`@storybook/nextjs-vite`) shows this design system with the app's real CSS, tokens and fonts.
+
+```bash
+npm run storybook        # http://localhost:6006
+npm run build-storybook  # static build in storybook-static/ (CI: .github/workflows/storybook.yml)
+```
+
+- **Foundations/Tokens** reads every CSS custom property the app defines at runtime, so it never drifts from the code.
+- **Design/DESIGN.md** renders this file.
+- **Components/**, **Sections/** and **Pages/** show the UI with mock data only (no network, analytics off).
+- Toolbar: locale, theme (light / dark), viewports 320 / 375 / 768 / 1440. The a11y panel runs axe (WCAG 2.2 AA).
+- Rule: a new shared component or page section ships with a story in `stories/`.
