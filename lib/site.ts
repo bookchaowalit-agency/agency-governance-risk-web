@@ -21,6 +21,7 @@ export const site = {
   "status": "target",
   "design": {
     "projectName": "solo-agency-governance-risk",
+    "productionUrl": "https://solo-agency-governance-risk.vercel.app",
     "archetype": "boardpaper",
     "motif": "boardpaper",
     "world": "Board paper and control register",
