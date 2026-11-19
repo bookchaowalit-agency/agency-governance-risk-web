@@ -19,4 +19,7 @@
   --font-serif: var(--font-serif-thai), Georgia, "Times New Roman", serif;
   /* Mono labels contain Thai: send Thai glyphs to Noto Sans Thai, not the OS. */
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", "DejaVu Sans Mono", var(--font-sans-thai), monospace;
+  /* 2026-11-18 review: focus ring/lines >= 3:1 on --bg; accent as text >= 4.5:1 on --bg and --panel. */
+  --focus: #a96824;
+  --accent-text: #87531d;
 }
