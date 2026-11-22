@@ -26,7 +26,7 @@ html { scroll-padding-top: 24px; }
 .primary-link:hover, .site-header nav a:hover, .pseo-nav a:hover { color: var(--accent-text, var(--accent)); }
 
 /* Text floor: 12px for mono labels, 14px+ for text people read; no forced capitals on small labels. */
-.site-header nav, .pseo-nav, .brand small, .pseo-brand small, .hero-meta, .signal-row span, .register-row > span,
+.site-header nav, .pseo-nav, .pseo-brand small, .hero-meta,
 .readiness-note span, .site-footer, .pseo-footer, .pseo-breadcrumb, .pseo-eyebrow, .pseo-aside dt, .pseo-steps li > span,
 .artifact small, .artifact > span, .artifact em, .terminal-top, .terminal-row span, .boardpaper-head span, .boardpaper-row span,
 .boardpaper-row i, .ledger-head span, .ledger-row span, .ledger-row i, .dealroom-ticker, .plan-room, .mission-stamp {
@@ -36,7 +36,7 @@ html { scroll-padding-top: 24px; }
 .site-header nav, .pseo-nav { font-family: var(--sans); font-size: 14px; letter-spacing: normal; }
 .artifact-blueprint strong, .artifact-labnote strong, .artifact-architectural strong, .artifact-riskmatrix strong, .artifact-clinical strong,
 .artifact-solarfield strong, .artifact-missionbrief strong, .artifact-fieldmanual strong, .dealroom-ticker strong { font-size: 12px; }
-.signal-row span, .register-row > span { font-size: 13px; }
+.brand small, .signal-row span, .register-row > span { font-size: 14px; }
 .artifact-caption { font-size: 14px; line-height: 1.6; }
 .readiness-section > div:first-child p { font-size: 15px; line-height: 1.75; }
 .pseo-aside dd { font-size: 14px; }
