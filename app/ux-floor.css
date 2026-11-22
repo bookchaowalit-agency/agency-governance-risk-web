@@ -8,7 +8,7 @@
 
 /* Focus: one 3px ring with a 2px offset everywhere (replaces the old 2px / 5px link-only rule). Without a site
    --focus the ring is --ink, not --accent: a light accent (e.g. #83b936 on #edf5f4, 2.1:1) misses 3:1 on --bg. */
-:focus-visible, a:focus-visible { outline: var(--focus-ring-width, 3px) solid var(--focus, var(--ink)); outline-offset: var(--focus-ring-offset, 2px); }
+:focus-visible { outline: var(--focus-ring-width, 3px) solid var(--focus, var(--ink)); outline-offset: var(--focus-ring-offset, 2px); }
 ::selection { color: var(--inverse-ink); background: var(--inverse); }
 html { scroll-padding-top: 24px; }
 
@@ -26,7 +26,7 @@ html { scroll-padding-top: 24px; }
 .primary-link:hover, .site-header nav a:hover, .pseo-nav a:hover { color: var(--accent-text, var(--accent)); }
 
 /* Text floor: 12px for mono labels, 14px+ for text people read; no forced capitals on small labels. */
-.site-header nav, .pseo-nav, .brand small, .pseo-brand small, .hero-meta, .signal-row span, .register-row > span,
+.site-header nav, .pseo-nav, .pseo-brand small, .hero-meta,
 .readiness-note span, .site-footer, .pseo-footer, .pseo-breadcrumb, .pseo-eyebrow, .pseo-aside dt, .pseo-steps li > span,
 .artifact small, .artifact > span, .artifact em, .terminal-top, .terminal-row span, .boardpaper-head span, .boardpaper-row span,
 .boardpaper-row i, .ledger-head span, .ledger-row span, .ledger-row i, .dealroom-ticker, .plan-room, .mission-stamp {
@@ -36,14 +36,14 @@ html { scroll-padding-top: 24px; }
 .site-header nav, .pseo-nav { font-family: var(--sans); font-size: 14px; letter-spacing: normal; }
 .artifact-blueprint strong, .artifact-labnote strong, .artifact-architectural strong, .artifact-riskmatrix strong, .artifact-clinical strong,
 .artifact-solarfield strong, .artifact-missionbrief strong, .artifact-fieldmanual strong, .dealroom-ticker strong { font-size: 12px; }
-.signal-row span, .register-row > span { font-size: 13px; }
+.brand small, .signal-row span, .register-row > span { font-size: 14px; }
 .artifact-caption { font-size: 14px; line-height: 1.6; }
 .readiness-section > div:first-child p { font-size: 15px; line-height: 1.75; }
 .pseo-aside dd { font-size: 14px; }
 .pseo-home-link { font-size: 14px; }
 
 /* Thai text: no negative tracking, room for tone marks (design floor checker: headings >= 1.3, body >= 1.6). */
-.site-shell .hero h1 { font-size: clamp(36px, 4.2vw, 60px); letter-spacing: normal; line-height: 1.3; text-transform: none; }
+.site-shell .hero h1 { font-size: clamp(40px, 5vw, 72px); letter-spacing: normal; line-height: 1.3; text-transform: none; }
 .story-section h2, .offer-intro h2, .readiness-section h2, .pseo-section-heading h2, .pseo-readiness h2, .pseo-card h2, .pseo-index-card h2 { letter-spacing: normal; line-height: var(--leading-thai-heading, 1.35); }
 .story-section h2, .offer-intro h2, .readiness-section h2, .pseo-section-heading h2, .pseo-readiness h2 { font-size: clamp(30px, 3.6vw, 52px); }
 .pseo-card h2, .pseo-index-card h2 { font-size: clamp(26px, 2.8vw, 40px); }
@@ -100,7 +100,7 @@ html { scroll-padding-top: 24px; }
 
 @media (max-width: 650px) {
   .hero { padding-top: 32px; }
-  .site-shell .hero h1 { font-size: clamp(34px, 9vw, 48px); }
+  .site-shell .hero h1 { font-size: clamp(34px, 9vw, 36px); }
   .pseo-hero h1, .pseo-index-hero h1 { font-size: clamp(32px, 9vw, 44px); }
   .site-header, .pseo-header { gap: 4px; }
   .site-header nav, .pseo-nav { margin-left: -8px; }

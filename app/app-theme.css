@@ -21,5 +21,5 @@
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", "DejaVu Sans Mono", var(--font-sans-thai), monospace;
   /* 2026-11-18 review: focus ring/lines >= 3:1 on --bg; accent as text >= 4.5:1 on --bg and --panel. */
   --focus: #a96824;
-  --accent-text: #87531d;
+  --accent-text: #89541d;
 }
